@@ -5,7 +5,7 @@ pluginpath = BepInEx/plugins
 assemble:
 	rm -f -r public
 	mkdir -p public/$(pluginpath)/$(modname)
-	cp bin/$(modname).dll public/$(pluginpath)/$(modname)/
+	cp -u bin/$(modname).dll public/$(pluginpath)/$(modname)/
 
 publish:
 	make assemble
@@ -15,7 +15,7 @@ publish:
 install:
 	make assemble
 	rm -r -f $(gamepath)/$(pluginpath)/$(modname)
-	cp -r public/* $(gamepath)
+	cp -u -r public/* $(gamepath)
 clean:
 	rm -f -r public
 	rm -f $(modname).rar
