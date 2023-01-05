@@ -10,7 +10,7 @@
     public class AntiAlchemyAbuse : BaseUnityPlugin
     {
         public const string GUID = "com.ehaugw.antialchemyabuse";
-        public const string VERSION = "5.0.2";
+        public const string VERSION = "5.0.3";
         public const string NAME = "Anti Alchemy Abuse";
 
         internal void Awake()

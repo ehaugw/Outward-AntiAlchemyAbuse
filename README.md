@@ -40,7 +40,9 @@ Manual Uninstallation
 # Patch notes
 
 
-* Version 5.0.2
+* Version 5.0.3
+
+  * fix readme formatting.* Version 5.0.2
 
   * fix readme formatting.* Version 5.0.1
 
