@@ -21,7 +21,10 @@ publish:
 	cp -u resources/manifest.json thunderstore/
 	cp -u README.md thunderstore/
 	cp -u resources/icon.png thunderstore/
-	(cd thunderstore && zip -r $(modname)_thunderstore.zip * && mv $(modname)_thunderstore.zip ../)
+	(cd thunderstore && zip -r $(modname)_thunderstore.zip *)
+	cp -u ../tcli/thunderstore.toml thunderstore
+	(cd thunderstore && tcli publish --file $(modname)_thunderstore.zip) || true
+	mv thunderstore/$(modname)_thunderstore.zip .
 
 install:
 	make assemble
