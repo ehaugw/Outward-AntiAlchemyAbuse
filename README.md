@@ -25,7 +25,6 @@ Manual Installation
 Manual Uninstallation
 
 * Version 1.0.0 and onward
-
  * Navigate to "Outward/BepInEx/plugins/".
  * Delete the "AntiAlchemyAbuse" folder.
 
