@@ -29,7 +29,7 @@ publish:
 install:
 	make assemble
 	rm -r -f $(gamepath)/$(pluginpath)/$(modname)
-	cp -u -r public/* $(gamepath)
+	# cp -u -r public/* $(gamepath)
 clean:
 	rm -f -r public
 	rm -f -r thunderstore
